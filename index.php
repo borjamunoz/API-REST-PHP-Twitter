@@ -1,6 +1,7 @@
 <?php
+    ini_set('display_errors', 1);
     //De esta manera importamos el documento para poder utilizar sus recursos
-    include("TwitterAPIExchange.php");
+    require_once('TwitterAPIExchange.php');
 
     //Creamos la configuracion de acceso en un array
     $settings = array(
@@ -10,7 +11,7 @@
     'consumer_secret' => "NInli0TjjP1B991RRCp8an41dhFk9EIl6lTbqz5AxziMHGH9Sg");
     
     $url = 'https://api.twitter.com/1.1/statuses/user_timeline.json';
-    $getfield = '?screen_name=gaboingab&count=1';
+    $getfield = '?screen_name=j7mbo';
     $requestMethod = 'GET';
     
     //Creamos un objeto del tipo API
