@@ -21,7 +21,7 @@ Para obtener el timeline de un usuario en cuestión: https://dev.twitter.com/res
 9. Rellenamos las variables con los datos que nos ha proporcionado twitter.
 10. Elegimos el método GET que vamos a utilizar y en la url asignamos la conexión a la API que nos interesa
 11. $url = 'https://api.twitter.com/1.1/statuses/user_timeline.json';
-    $getfield = '?screen_name=gaboingab';
+    $getfield = '?screen_name=gaboingab&count=1';
     $requestMethod = 'GET';
 
     $twitter = new TwitterAPIExchange($settings);
