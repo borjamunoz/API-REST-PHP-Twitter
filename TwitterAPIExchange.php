@@ -141,9 +141,11 @@ class TwitterAPIExchange{
     * @return string json If $return param is true, returns json data.
     */
     public function performRequest($return = true){
-            throw new Exception('performRequest parameter must be true or false');
-        }
+        
+        /*throw new Exception('performRequest parameter must be true or false');*/
+        
         $header = array($this->buildAuthorizationHeader($this->oauth), 'Expect:');
+        
         $getfield = $this->getGetfield();
         $postfields = $this->getPostfields();
         $options = array(
