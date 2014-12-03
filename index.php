@@ -11,7 +11,7 @@
     'consumer_secret' => "NInli0TjjP1B991RRCp8an41dhFk9EIl6lTbqz5AxziMHGH9Sg");
     
     $url = 'https://api.twitter.com/1.1/statuses/user_timeline.json';
-    $getfield = '?screen_name=j7mbo';
+    $getfield = '?screen_name=gaboingab&count=1';
     $requestMethod = 'GET';
     
     //Creamos un objeto del tipo API
